@@ -97,7 +97,7 @@ int main(int argc, char** argv)
         // call the method to do the work
         my_dgemv(n, A, X, Y); 
 
-        // insert end timer code here
+        // insert end timer code here, and print out the elapsed time for this problem size
 
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end_time - start_time;
